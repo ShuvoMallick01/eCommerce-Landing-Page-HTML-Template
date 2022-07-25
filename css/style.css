@@ -552,7 +552,7 @@ footer {
 /* Tablet responsive end */
 
 /* mobile responsive start */
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   header nav {
     display: none;
   }
