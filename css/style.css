@@ -25,6 +25,8 @@ a {
 .container {
   max-width: 1200px;
   margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .d-flex {
@@ -124,6 +126,7 @@ nav ul li a {
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
+  /* background-origin: content-box; */
 }
 
 .banner-content {
@@ -172,6 +175,8 @@ nav ul li a {
   justify-content: space-around;
   background-color: #fff;
   box-shadow: -3px 3px 9px 0px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .service-item {
@@ -475,3 +480,46 @@ footer {
   padding: 0 10px;
 }
 /*  Footer end  */
+
+/* responsive css start*/
+/* Tablet responsive Start */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .banner-content {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .service-item:nth-child(even) {
+    border-right: none;
+  }
+}
+/* Tablet responsive end */
+
+/* mobile responsive start */
+@media (max-width: 425px) {
+  header nav {
+    display: none;
+  }
+
+  .banner-content h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .banner-area {
+    background-image: cover;
+  }
+
+  .service-item {
+    border-right: none;
+  }
+}
+/* mobile responsive end */
+/* responsive css end*/
