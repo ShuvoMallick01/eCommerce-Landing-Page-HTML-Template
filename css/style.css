@@ -1,3 +1,8 @@
+:root {
+  --text-primary: #666;
+  --font-primary: "Poppins", sans-serif;
+}
+
 /* ========== Reset CSS ========== */
 *,
 *::after,
@@ -11,9 +16,9 @@
 }
 
 body {
-  color: #666;
+  color: var(--text-primary);
   background-color: #ffffff;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-primary);
 }
 
 a {
@@ -181,7 +186,7 @@ nav ul li a {
 
 .service-item {
   gap: 20px;
-  border-right: 1px solid #666;
+  border-right: 1px solid var(--text-primary);
   flex-grow: 1;
   justify-content: center;
 }
@@ -499,7 +504,51 @@ footer {
   .service-item:nth-child(even) {
     border-right: none;
   }
+
+  .category-list {
+    flex-wrap: wrap;
+  }
+
+  .category-item {
+    width: 46%;
+    flex-grow: 1;
+  }
+
+  .product-list {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .single-product {
+    width: 46%;
+    flex-grow: 1;
+  }
+
+  .summer-sale h2 {
+    font-size: 50px;
+  }
+
+  .article-list {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .single-article {
+    width: 46%;
+  }
+
+  .footer-area {
+    flex-wrap: wrap;
+    flex-direction: column;
+    column-gap: 20px;
+    row-gap: 5px;
+  }
+
+  .footer-area p {
+    margin-top: 10px;
+  }
 }
+
 /* Tablet responsive end */
 
 /* mobile responsive start */
@@ -519,6 +568,26 @@ footer {
 
   .service-item {
     border-right: none;
+  }
+
+  .category-item {
+    width: 100%;
+    /* flex-grow: 1; */
+  }
+
+  .single-product {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .single-article {
+    width: 100%;
+  }
+
+  .footer-area {
+    flex-wrap: wrap;
+    flex-direction: column;
+    column-gap: 20px;
   }
 }
 /* mobile responsive end */
