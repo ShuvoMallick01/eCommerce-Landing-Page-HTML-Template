@@ -631,6 +631,17 @@ footer {
     flex-direction: column;
     column-gap: 20px;
   }
+
+  /* 
+  header nav {
+    display: none;
+  }
+
+  .footer-area {
+    flex-wrap: wrap;
+    flex-direction: column;
+    column-gap: 20px;
+  }*/
 }
 /* mobile responsive end */
-/* responsive css end*/
+/* responsive css end */
