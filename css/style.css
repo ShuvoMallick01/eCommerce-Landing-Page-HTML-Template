@@ -93,7 +93,11 @@ h2 {
 
 /* Utilities Class End*/
 
-/* Header area start */
+/* ===== Animation CSS Start ===== */
+
+/* ===== Animation End Start ===== */
+
+/* ===== Header area start ===== */
 header {
   padding: 20px 0;
 }
@@ -486,11 +490,10 @@ footer {
 }
 /*  Footer end  */
 
-/* ===================================================== */
-/* responsive css start*/
+/* ======= Responsive Start =======*/
 
 /* 'lg' applies to medium devices (tablets, less than 992px) */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .service-list {
     flex-wrap: wrap;
   }
@@ -632,7 +635,7 @@ footer {
     column-gap: 20px;
   }
 
-  /* 
+  /*
   header nav {
     display: none;
   }
