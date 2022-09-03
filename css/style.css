@@ -63,15 +63,12 @@ a {
 .btn-primary {
   background-color: #3489de;
   color: #fff;
-  /* border: 3px solid #3489de; */
   position: relative;
   z-index: 1;
 }
 
 .btn-primary:hover {
-  /* background-color: #fff; */
   color: #3489de;
-  cursor: pointer;
 }
 
 .btn-primary:before {
@@ -104,8 +101,6 @@ a {
 }
 
 .btn-secondary:hover {
-  /* background-color: #3489de;
-  color: #fff; */
   box-shadow: inset 300px 0 0 0 #3489de;
   cursor: pointer;
   color: #fff;
@@ -466,6 +461,8 @@ nav ul li a {
   max-height: 200px;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .article-top-img img {
