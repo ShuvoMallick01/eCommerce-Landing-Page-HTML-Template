@@ -1,5 +1,6 @@
 :root {
   --text-primary: #666;
+  --bg-white: #fff;
   --font-primary: "Poppins", sans-serif;
 }
 
@@ -143,7 +144,12 @@ h2 {
 
 /* ===== Header area start ===== */
 header {
-  padding: 20px 0;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--bg-white);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .logo {
